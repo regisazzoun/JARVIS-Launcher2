@@ -1,0 +1,1 @@
+const assert=require('node:assert/strict');const f=require('../site/format.js');assert.equal(f.duration(59.8),'1 min 0 s');assert.equal(f.duration(0),'0 min 0 s');assert.equal(f.duration(-10),'0 min 0 s');assert.equal(f.duration(NaN),'indisponible');console.log('duration cases passed');

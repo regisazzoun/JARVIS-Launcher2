@@ -1,0 +1,2 @@
+/* Fixture initiale de Codex. JARVIS reçoit la correction et ses tests. */
+(function(root){const api={duration(seconds){if(!Number.isFinite(seconds))return 'indisponible';if(seconds<0)return '0 min 0 s';const total=Math.round(seconds);return Math.floor(total/60)+' min '+(total%60)+' s'}};if(typeof module==='object'&&module.exports)module.exports=api;else root.JLFormat=api})(typeof globalThis!=='undefined'?globalThis:this);
