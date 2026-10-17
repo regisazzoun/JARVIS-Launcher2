@@ -1,0 +1,11 @@
+const assert=require('node:assert/strict');const t=require('../site/task-model.js');
+assert.equal(t.taskView({id:'x',state:'completed',evidence:[]}).verified,false);
+assert.equal(t.taskView({id:'x',state:'validated',evidence:[{ok:true,result:{returncode:0,evidence_id:'native-proof'}}]}).verified,true);
+assert.equal(t.taskView({id:'x',state:'validated',evidence:[{ok:false,result:{returncode:1,evidence_id:'failure'}}]}).verified,false);
+assert.equal(t.taskView({id:'x',state:'validated',evidence:[{ok:true,returncode:2,evidence_id:'bad-exit'}]}).verified,false);
+assert.equal(t.taskView({id:'x',state:'validated',evidence:'broken'}).verified,false);
+assert.equal(t.taskView().verified,false);assert.equal(t.statusLabel('other'),'Indisponible');assert.equal(t.statusLabel('__proto__'),'Indisponible');
+assert.equal(t.progressView({percent:150,measured:true}).percent,100);
+assert.equal(t.progressView({percent:NaN,measured:true}).kind,'indeterminate');
+assert.equal(t.progressView({validated:1,total:4}).percent,25);assert.equal(t.progressView({percent:25,total:4,validated:1}).kind,'tasks');
+assert.equal(t.progressView({percent:20}).kind,'estimated');console.log('13 task-model integration assertions passed');

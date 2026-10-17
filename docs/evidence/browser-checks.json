@@ -1,0 +1,95 @@
+{
+  "browser": "Chromium on Debian, installed gateway, real Ollama backend",
+  "checks": [
+    {
+      "name": "existing_gateway_login",
+      "passed": true
+    },
+    {
+      "name": "real_resource_metrics",
+      "passed": true
+    },
+    {
+      "name": "desktop_fixed_page_height",
+      "passed": true
+    },
+    {
+      "name": "desktop_no_horizontal_overflow",
+      "passed": true
+    },
+    {
+      "name": "desktop_independent_scroll",
+      "passed": true
+    },
+    {
+      "name": "tablet_fixed_page_height",
+      "passed": true
+    },
+    {
+      "name": "tablet_no_horizontal_overflow",
+      "passed": true
+    },
+    {
+      "name": "tablet_independent_scroll",
+      "passed": true
+    },
+    {
+      "name": "phone_fixed_page_height",
+      "passed": true
+    },
+    {
+      "name": "phone_no_horizontal_overflow",
+      "passed": true
+    },
+    {
+      "name": "phone_independent_scroll",
+      "passed": true
+    },
+    {
+      "name": "v1_protocol_link",
+      "passed": true
+    },
+    {
+      "name": "voice_controls",
+      "passed": true
+    },
+    {
+      "name": "real_qwen_conversation",
+      "passed": true
+    },
+    {
+      "name": "shared_text_voice_conversation",
+      "passed": true
+    },
+    {
+      "name": "long_history_keeps_composer",
+      "passed": true
+    },
+    {
+      "name": "sandbox_expand",
+      "passed": true
+    },
+    {
+      "name": "sandbox_collapse",
+      "passed": true
+    },
+    {
+      "name": "real_agent_events",
+      "passed": true
+    },
+    {
+      "name": "verified_task_tick",
+      "passed": true
+    },
+    {
+      "name": "logout",
+      "passed": true
+    },
+    {
+      "name": "no_browser_javascript_error",
+      "passed": true
+    }
+  ],
+  "physical_macos": false,
+  "physical_microphone": false
+}

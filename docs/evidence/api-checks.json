@@ -1,0 +1,54 @@
+{
+  "checks": [
+    {
+      "name": "auth_required_/api/launcher/resources",
+      "passed": true
+    },
+    {
+      "name": "auth_required_/api/launcher/missions",
+      "passed": true
+    },
+    {
+      "name": "auth_required_/api/launcher/events",
+      "passed": true
+    },
+    {
+      "name": "foreign_origin_denied",
+      "passed": true
+    },
+    {
+      "name": "artifact_path_confined",
+      "passed": true
+    },
+    {
+      "name": "artifact_path_confined",
+      "passed": true
+    },
+    {
+      "name": "real_mac_and_dell",
+      "passed": true
+    },
+    {
+      "name": "dell2_unavailable",
+      "passed": true
+    },
+    {
+      "name": "real_piper_wav",
+      "passed": true
+    },
+    {
+      "name": "real_whisper_transcription",
+      "passed": true
+    },
+    {
+      "name": "resume_interrupted_mission",
+      "passed": true
+    },
+    {
+      "name": "v1_gateway_root_preserved",
+      "passed": true
+    }
+  ],
+  "audio": "Piper synthetic WAV -> Whisper real, no physical microphone",
+  "pause_test_id": "64c4652077174b65ba6d57ebefc04c96"
+}

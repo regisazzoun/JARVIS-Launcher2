@@ -1,0 +1,8 @@
+{
+  "real_browser_microphone_pipeline": true,
+  "source": "Synthetic Chromium microphone from Piper WAV, no physical microphone",
+  "whisper_transcription": true,
+  "real_qwen_reply": true,
+  "piper_audio_playback_started": true,
+  "audio_stop": true
+}

@@ -1,0 +1,28 @@
+{
+  "version": 1,
+  "profiles": {
+    "macbook-pro": { "label": "MacBook Pro", "machine": "macbook-pro", "user": "adminjarvis", "host": "100.74.214.86", "lanHost": "192.168.1.99", "sshPort": 22, "identityFile": "~/.ssh/id_ed25519_jarvis", "localWebPort": 8765 },
+    "mac-mini": { "label": "Mac mini", "machine": "mac-mini", "user": "adminjarvis", "host": "100.74.214.86", "lanHost": "192.168.1.99", "sshPort": 22, "identityFile": "~/.ssh/id_ed25519_jarvis", "localWebPort": 8765 }
+  },
+  "remote": { "directory": "/home/adminjarvis/JARVIS", "webPort": 8765, "sessions": ["jarvis-codex", "jarvis-13bc", "jarvis-13f"], "defaultSession": "jarvis-codex" },
+  "ui": {
+    "title": "JARVIS Launcher",
+    "favorites": ["ssh", "codex", "codex-tmux"],
+    "sections": [
+      { "title": "Votre espace de travail", "description": "Un terminal, une tâche. Toujours connecté à JARVIS.", "actions": [
+        { "id": "ssh", "label": "SSH JARVIS", "description": "Une connexion interactive au serveur, via Tailscale.", "icon": "↗" },
+        { "id": "codex", "label": "Codex normal", "description": "Ouvrir JARVIS et démarrer Codex dans le terminal.", "icon": "⌘" },
+        { "id": "codex-tmux", "label": "Codex sous tmux", "description": "Reprendre la session choisie ou en créer une.", "icon": "▤" }
+      ] },
+      { "title": "Sessions & accès", "description": "Retrouver le fil, garder votre travail accessible.", "actions": [
+        { "id": "tmux-attach", "label": "Retrouver une session", "description": "Se rattacher à la session choisie, sans la créer.", "icon": "↩" },
+        { "id": "tmux-list", "label": "Lister les sessions", "description": "Afficher les sessions tmux existantes sur JARVIS.", "icon": "☷" },
+        { "id": "web-tunnel", "label": "Tunnel JARVIS Web", "description": "Accéder au port web 8765 par un tunnel SSH local.", "icon": "◎" }
+      ] },
+      { "title": "Raccourcis JARVIS", "description": "Des actions identifiées, sans commande libre.", "actions": [
+        { "id": "services", "label": "État des services", "description": "Lire l’état des services JARVIS, sans les modifier.", "icon": "◉" },
+        { "id": "ssh-lan", "label": "SSH JARVIS · LAN", "description": "Choisir explicitement le réseau local de secours.", "icon": "⌁" }
+      ] }
+    ]
+  }
+}

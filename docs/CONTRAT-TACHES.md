@@ -1,0 +1,6 @@
+JL-02. Module UMD sans dépendances : window.JLTasks et module.exports.
+Exports statusLabel(state), taskView(task), progressView(progress).
+statusLabel traduit pending/queued/running/validated/completed/failed/blocked/incomplete/interrupted/reported en français, état inconnu = Indisponible.
+taskView reçoit id,title,state,evidence ; evidence peut être une liste ou une chaîne JSON. Retourne id,title,label,verified. verified seulement si state validated ET evidence contient au moins un objet avec result.ok=true et result.result.returncode absent ou zéro ; ou un objet ok=true avec preuve evidence_id non vide. Un completed sans preuve ne reçoit jamais de coche. Ne pas confondre une réponse de modèle et une preuve d'outil.
+progressView reçoit percent, measured, total, validated. Retourne kind,percent,label. percent borné 0..100 si nombre fini ; measured=true -> measured ; sinon total>0 -> tasks ; pourcentage seul sans mesure -> estimated ; sans donnée -> indeterminate et percent=null. Label doit distinguer mesuré, tâches vérifiées, estimé, activité indéterminée.
+Aucun HTML produit ; le client utilise textContent. Tests node:assert/strict. Fichiers site/task-model.js et tests/task-model.test.cjs.

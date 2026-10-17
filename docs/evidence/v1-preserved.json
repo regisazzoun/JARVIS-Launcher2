@@ -1,0 +1,16 @@
+{
+  "v1_local_head": "ce95648d7672729b8b5c1c8e29de2f92c16f1732",
+  "v1_worktree_clean": true,
+  "v1_pages_before": "d0ef414a12cb4491964801563a8ef0768235d5af",
+  "v1_reused_files_equal": true,
+  "files": {
+    "site/core.js": "67a1780851068b9e37fe24c120088808ad2405858b91084ea0ee1222f6fe2800",
+    "site/config.json": "69fbe434b4301dd177985d6044f89c8afa9f8320d3e9056c21bb2ca0fcb8dac4",
+    "macos/uninstall.sh": "a5662c7f70fc7da5f056147cdfb3a1429233a97b325e6375e7f9706aeb4a40b2",
+    "macos/install.sh": "510400c7a804f41a69c55cd2434cd7fc55f30124e2e10eb10535cfe6f8576ee4",
+    "macos/hardware.js": "a26790c7f18deaa195edb7b44625b21f748204292688a410943404e0e920ba25",
+    "macos/launcher.js": "f992d28302fbf10bd354c2229ae0b2646c28bc9f3c24670b46ee4f4646af0c95",
+    "macos/Launcher.applescript": "6919dc596449b17922846535bc05623ae351940437fb5ccc3e33a5e0fa3ac13a",
+    "macos/setup.js": "e594d0e9c6c6fda87a116662bb82edca7701be9bcc906cf6d3b399c9caedc96a"
+  }
+}
