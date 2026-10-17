@@ -49,6 +49,10 @@ with zipfile.ZipFile(target/'companion-macos.zip','w',zipfile.ZIP_DEFLATED) as z
   if p.is_file():z.write(p,'JARVIS-Launcher2/'+str(p.relative_to(source)))
  for name in ('core.js','config.json'):z.write(source/'site'/name,'JARVIS-Launcher2/site/'+name)
 (target/'companion-macos.zip').chmod(0o644)
+config=base/'config/13e.json'
+if config.exists():
+ shutil.copy2(config,backup/'13e.json');settings=json.loads(config.read_text());settings['num_predict']=max(4096,settings.get('num_predict',0));settings['ollama_timeout']=max(300,settings.get('ollama_timeout',0))
+ st=config.stat();temporary=config.with_suffix('.jl02.tmp');temporary.write_text(json.dumps(settings,ensure_ascii=False,indent=2)+'\n');os.chown(temporary,st.st_uid,st.st_gid);temporary.chmod(st.st_mode & 0o777);os.replace(temporary,config)
 policy=P('/etc/jarvis/host-policy.json');cfg=json.loads(policy.read_text());shutil.copy2(policy,backup/'host-policy.json')
 code=(source/'backend/telemetry.py').read_text()
 cfg['remote_hosts']['dell-observe']['commands']['telemetry']='python3 -c '+shlex.quote(code)+' '+shlex.quote('http://'+cfg['remote_hosts']['dell-observe']['address']+':11434')

@@ -1,0 +1,19 @@
+{
+  "observed_at": 1792265734.2673988,
+  "operator_tasks_validated": {
+    "total": 5,
+    "validated": 5,
+    "percent": 100,
+    "measured": false
+  },
+  "mac_and_dell_available": true,
+  "canonical_services": [
+    "active",
+    "active",
+    "active",
+    "active"
+  ],
+  "publication_http": 200,
+  "verdict": "GO AVEC RESERVES",
+  "native_macos_audio_physical_tested": false
+}

@@ -1,0 +1,25 @@
+{
+  "run_id": "129d98a5b0db4d869bcf067bd79a66b2",
+  "submitted_by": "Real Chromium Launcher form",
+  "model": "qwen3.5:27b-q4_K_M",
+  "file_independently_verified": "docs/RECETTE-INTERFACE-JARVIS.txt",
+  "real_events_visible": true,
+  "proofs": [
+    {
+      "tool": "host_write_file",
+      "ok": true,
+      "evidence_id": "ddfbce6673834418919b7ba93d43391f"
+    },
+    {
+      "tool": "host_read_file",
+      "ok": true,
+      "evidence_id": "c3ff13707c5b44e98a9bf6de87bf42d6"
+    }
+  ],
+  "prior_attempt": {
+    "run_id": "5b4c31ecf1e44fcd8d41b217f19a141b",
+    "state": "reported",
+    "accepted": false,
+    "reason": "Only intervention_report; no file write/read tool called and no file produced. Model statement not accepted as evidence."
+  }
+}

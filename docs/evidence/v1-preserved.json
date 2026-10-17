@@ -12,5 +12,7 @@
     "macos/launcher.js": "f992d28302fbf10bd354c2229ae0b2646c28bc9f3c24670b46ee4f4646af0c95",
     "macos/Launcher.applescript": "6919dc596449b17922846535bc05623ae351940437fb5ccc3e33a5e0fa3ac13a",
     "macos/setup.js": "e594d0e9c6c6fda87a116662bb82edca7701be9bcc906cf6d3b399c9caedc96a"
-  }
+  },
+  "v1_pages_after": "d0ef414a12cb4491964801563a8ef0768235d5af",
+  "v1_public_http": 200
 }

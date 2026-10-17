@@ -33,3 +33,7 @@ Le commit JARVIS ne contient que `site/format.js` et `tests/format.test.cjs`. Le
 Pour les seules missions agentiques, les extraits de souvenirs/documents injectés sont bornés afin de conserver les observations des outils dans le contexte. La mémoire SQLite stockée n’est pas modifiée. Un test unitaire dédié, explicitement à transport simulé, vérifie ce budget ; il ne remplace pas les délégations réelles. La boucle est également interruptible entre les appels d’une même série d’outils.
 
 Le dernier audit avait déjà enregistré son rapport avant un redémarrage de service, mais a repris des vérifications. Après réception indépendante des six tests et du document, Codex a interrompu cette poursuite redondante via l’API. Son état final ne doit pas être présenté comme une clôture autonome sans assistance. Les traces et le rapport de réception distinguent cette intervention.
+
+## Réception depuis l’interface
+
+Le premier lancement de réception par le formulaire a donné un rapport sans opération réelle, affirmant à tort que le test précédent était acquis. Codex a rejeté cette réponse : aucun fichier, aucune preuve d’écriture. Le second lancement, avec un objectif direct, a produit les appels host_write_file puis host_read_file et le fichier vérifié. Les deux identifiants sont conservés dans agent-ui.json. Le succès retenu repose sur les traces et le fichier, pas sur le texte du modèle.

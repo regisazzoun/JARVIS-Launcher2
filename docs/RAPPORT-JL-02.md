@@ -38,3 +38,13 @@ La V1 et le laboratoire principal sont préservés. Aucun merge automatique dans
 ## Parcours vocal navigateur
 
 Le [test vocal Chromium](evidence/voice-browser.json) a réussi : source micro synthétique issue d’un WAV Piper, capture MediaRecorder, transcription Whisper réelle, inférence Qwen réelle, nouvelle synthèse Piper, démarrage de lecture audio puis arrêt. Une première exécution alors que le moteur agentique était occupé a échoué ; l’interface a affiché cet échec. La reprise à moteur disponible a réussi. Cela ne valide pas les microphones ni haut-parleurs physiques.
+
+## Publication et préservation vérifiées
+
+[Preuve de publication](evidence/publication.json) : HTTP 200 réel sur GitHub Pages, chargement Chromium sans erreur JavaScript, aucun appel à l’API privée depuis le site public, profil client conservé et passage vers localhost réutilisant une vraie session JARVIS préexistante. Les contrôles sont réalisés sur un poste Debian autorisé ; aucun tunnel depuis un Mac distant physique n’est déduit de ce test.
+
+V1 reste HTTP 200 ; sa branche Pages conserve exactement la même empreinte avant/après, et son arbre local est propre. Les fichiers core/config et macos réutilisés sont identiques octet pour octet à V1. Voir [la preuve de préservation](evidence/v1-preserved.json).
+
+## Mission lancée depuis le Launcher
+
+[Preuve du formulaire agentique](evidence/agent-ui.json) : depuis Chromium, l’objectif a été soumis par la case Mission agentique, le worker Qwen a réellement écrit puis relu `docs/RECETTE-INTERFACE-JARVIS.txt`, et les événements ont été visibles dans Sandbox. Codex a vérifié indépendamment le contenu. Un premier essai avait produit seulement un rapport de blocage imaginaire, sans écrire le fichier : il a été rejeté et n’est pas compté comme réussite. Un objectif reformulé plus directement a abouti. Cette variabilité reste une réserve d’autonomie, distincte du bon fonctionnement du formulaire et des outils.

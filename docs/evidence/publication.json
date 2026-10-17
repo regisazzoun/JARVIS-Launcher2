@@ -1,0 +1,16 @@
+{
+  "url": "https://regisazzoun.github.io/JARVIS-Launcher2/",
+  "checks": [
+    "real_pages_http_200",
+    "public_page_does_not_call_private_api",
+    "desktop_composer_in_viewport",
+    "phone_composer_in_viewport",
+    "public_v1_protocol_profile",
+    "public_to_private_handoff",
+    "existing_real_session_reused",
+    "client_profile_preserved",
+    "no_javascript_error",
+    "v1_pages_sha_and_http_preserved"
+  ],
+  "public_private_client": "Chromium on authorized Debian host, same localhost port as SSH tunnel destination; no physical remote Mac claim"
+}

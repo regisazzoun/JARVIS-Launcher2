@@ -509,7 +509,8 @@
         "evidence_id": "38c4d56a3d69420ca60d7a9ab40075e9",
         "returncode": 0
       }
-    ]
+    ],
+    "operator_acceptance": "Partial prototype finalised by Codex"
   },
   {
     "delegation": "debug",
@@ -601,12 +602,13 @@
         "evidence_id": null,
         "returncode": null
       }
-    ]
+    ],
+    "operator_acceptance": "Independently verified tests and Git"
   },
   {
     "delegation": "quick-actions",
     "run_id": "8972fe23abce430286cbfcbde8afc6d9",
-    "state": "running",
+    "state": "interrupted",
     "attempts": 3,
     "operations": [
       {
@@ -854,7 +856,26 @@
         "ok": true,
         "evidence_id": "9f133b9b3eea46559bd95f15fa254b48",
         "returncode": 0
+      },
+      {
+        "tool": "host_read_file",
+        "ok": true,
+        "evidence_id": "214f67837b4f4466867d77af9b1592a6",
+        "returncode": 0
+      },
+      {
+        "tool": "host_read_file",
+        "ok": true,
+        "evidence_id": "077cf83db3144863bc92c15abd03fa9d",
+        "returncode": 0
+      },
+      {
+        "tool": "host_exec",
+        "ok": true,
+        "evidence_id": "5899d45fb12a41b2a3283a0e750ffa91",
+        "returncode": 0
       }
-    ]
+    ],
+    "operator_acceptance": "Six tests and report verified; redundant continuation interrupted by Codex"
   }
 ]
